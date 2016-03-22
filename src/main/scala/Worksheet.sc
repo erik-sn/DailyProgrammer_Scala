@@ -1,7 +1,5 @@
-import exercises.easy.SleepCycleEstimator
+import exercises.easy.{DiceRoller, NonRepeatingYears}
 
-var Sleep = new SleepCycleEstimator
+var test = new DiceRoller
 
-Sleep.getSleepTimes("6:15 AM")
-Sleep.getSleepTimes("6:15 AM", 20)
-Sleep.getWakeTimes("9:15 PM")
+test.rollDice("2d20+7")
