@@ -8,8 +8,7 @@ import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
 class RollDiceTest extends FunSuite  {
-  val test = new DiceRoller
-
-//  test("None")(assert(test.rollDice(10d6+1) == List()))
-//  test("Exclude 1981")(assert(test.getNonRepeatingYears(1980, 1987) == List(1980, 1982, 1983, 1984, 1985, 1986, 1987)))
+  val d = new DiceRoller
+  test("Type")(assert(d.rollDice("10d6+1").isInstanceOf[Int]))
+  test("Random")(assert(d.rollDice("10d6+1") != d.rollDice("10d6+1")))
 }
