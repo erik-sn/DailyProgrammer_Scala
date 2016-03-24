@@ -13,6 +13,11 @@ import scala.util.Random
   */
 class DiceRoller {
 
+  /**
+    * Given an input string in dice notation return an integer
+    * @param input String in "Dice Notation"
+    * @return randomly generated integer
+    */
   def rollDice(input: String): Int = {
     val split1 = input.split("d")
     val split2 = split1(1).split("[\\+-]")

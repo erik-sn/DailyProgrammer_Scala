@@ -1,4 +1,4 @@
-package exercies.intermediate
+package exercises.intermediate
 
 /**
   Write a program called 'censor' that takes in one argument on the command line. This argument is the filename of a
